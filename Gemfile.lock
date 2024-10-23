@@ -75,6 +75,9 @@ GEM
       minitest (>= 5.1)
       mutex_m
       tzinfo (~> 2.0)
+    apipie-rails (1.4.2)
+      actionpack (>= 5.0)
+      activesupport (>= 5.0)
     ast (2.4.2)
     base64 (0.2.0)
     bigdecimal (3.1.8)
@@ -246,6 +249,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  apipie-rails
   countries
   debug
   pry-rails

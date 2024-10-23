@@ -20,6 +20,9 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 # All sorts of useful information about every country
 gem "countries"
 
+# API documentation tool
+gem "apipie-rails"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
