@@ -6,7 +6,7 @@ class TaxRatesControllerTest < ActionController::TestCase
   end
 
   test "returns a tax calculation json" do
-    get(:calculate, params: { transaction_type: 'good', buyer_type: 'individual', buyer_country: 'ES', amount: 100 })
+    get(:calculate, params: { transaction_type: 'good', buyer_type: 'individual', buyer_country: 'ES', amount: 100, tax_behavior: 'inclusive' })
     data = JSON.parse(@response.body)['data']
     assert_response 200
     assert_equal('taxable', data['status'])
